@@ -1,0 +1,162 @@
+.page {
+  scroll-behavior: smooth;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header {
+  // height: 100vh;
+  height: $header-height;
+  background-image: url(../images/main.jpg);
+
+  @include backgroundPosition;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 190px;
+    margin-left: 113px;
+  }
+
+  &__title {
+    height: 93px;
+
+    font-size: 52px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    width: 315px;
+    margin-bottom: 40px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+
+.header__separator {
+  color: $white;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+
+  height: $logo-block-height;
+  width: 344px;
+  padding-left: 55px;
+  background-color: $yellow;
+}
+
+.logo {
+  height: 23px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__link-block {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 30px;
+
+  &--collection {
+    margin-right: 20px;
+  }
+
+  &--person {
+    margin-left: 20px;
+  }
+}
+
+.header__link {
+  font-size: 11px;
+  color: $white;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.person-image {
+  height: 31px;
+  margin-right: 86px;
+  margin-left: 15px;
+}
+
+.header__menu {
+  width: 260px;
+
+  background-color: $brown;
+}
+
+.menu {
+  height: $menu-height;
+  padding-left: 58px;
+
+  opacity: 60%;
+
+  &__list {
+    margin-top: 66px;
+  }
+
+  &__item {
+    margin-top: 16px;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+
+    &--active {
+      &::after {
+        display: inline-block;
+        margin-left: 70px;
+        margin-bottom: 3px;
+        content: "";
+        width: 86px;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
+
+.menu__container {
+  display: flex;
+}
+
+.button {
+  height: 35px;
+  width: 125px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border: 1px solid $yellow;
+  border-radius: 20px;
+
+  background-color: $yellow;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}

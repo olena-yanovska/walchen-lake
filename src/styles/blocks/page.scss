@@ -120,7 +120,7 @@
         margin-left: 70px;
         margin-bottom: 3px;
         content: "";
-        width: 86px;
+        width: 83px;
         border-bottom: 2px solid $white;
       }
     }
@@ -132,6 +132,7 @@
 }
 
 .button {
+  display: block;
   height: 35px;
   width: 125px;
   text-align: center;
@@ -169,7 +170,7 @@
   }
 }
 
-.content {
+.slide-content {
   display: flex;
   flex-direction: column;
 
@@ -187,7 +188,7 @@
   }
 
   &__text {
-    width: 315px;
+    width: 330px;
     margin-bottom: 40px;
 
     font-size: 11px;
@@ -418,5 +419,66 @@
     content: "";
     width: 30px;
     border-bottom: 2px solid $brown-light;
+  }
+}
+
+.above-sea {
+  &__container {
+    margin-top: 133px;
+  }
+
+}
+
+.above-sea-container {
+  display: flex;
+  &__photo {
+    display: block;
+    width: 575px;
+  }
+}
+
+.sea-content {
+  position: relative;
+  padding-left: 110px;
+
+  &__title {
+    margin-bottom: 22px;
+
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__quote {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+
+    font-family: "Playfair Displa"y, serif;
+
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2;
+    font-weight: 500;
+
+    &::before {
+      position: absolute;
+      left: -15px;
+      content: "\0022";
+    }
+
+    &::after {
+      position: absolute;
+      right: -15px;
+      content: "\0022";
+    }
+  }
+
+  &__text {
+    width: 310px;
+    margin-bottom: 52px;
+
+    font-size: 12px;
   }
 }

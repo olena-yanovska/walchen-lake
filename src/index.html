@@ -14,7 +14,7 @@
       crossorigin="use-credentials"
     >
     <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&family=Golos+Text:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     >
     <link
@@ -30,10 +30,10 @@
   </head>
 
   <body class="page">
-    <header class="header">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+    <header class="page__section header">
+      <div class="swiper header__swiper">
+        <div class="swiper__swiper-wrapper swiper-wrapper">
+          <div class="swiper-slide swiper-wrapper__slide">
             <div class="swiper-slide__content content">
               <h1 class="content__title">
                 The Walchen
@@ -51,7 +51,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-wrapper__slide">
             <div class="swiper-slide__content content">
               <h1 class="content__title">
                 The Walchen
@@ -69,7 +69,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-wrapper__slide">
             <div class="swiper-slide__content content">
               <h1 class="content__title">
                 The Walchen
@@ -179,6 +179,95 @@
     </header>
 
     <main>
+      <section class="page__section featured-spots" id="featured-spots">
+        <div class="featured-spots-container">
+          <div class="featured-spots-container__description featured-spots-description">
+            <h2 class="featured-spots-description__title">
+              Featured Spots
+            </h2>
+
+            <h3 class="featured-spots-description__description">
+              Some of featured spot that you might want visit before you die
+            </h3>
+
+            <p class="featured-spots-description__view-all">
+              View All
+            </p>
+          </div>
+
+          <div class="featured-spots-container__galery galery">
+            <div class="galery__cards cards">
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery1.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Ollantaytambo</div>
+                <div class="card__location">Peru</div>
+                <div class="card__description">
+                  Proin volutpat nisi eros, id gravida leo mattis sed. Nullam sit amet iaculis neque, eget maximus erat.
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery2.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Antelope Canyon</div>
+                <div class="card__location">USA</div>
+                <div class="card__description">
+                  Donec at ante id eros rhoncus bibendum a at augue. Fusce eu aliquam quam, ut efficitur nisl. Curabitur sit amet consectetur metus.
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery3.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Lake Louise</div>
+                <div class="card__location">Canada</div>
+                <div class="card__description">
+                  Maecenas sit amet nibh nec eros volutpat fringilla at eu lacus. Morbi viverra congue enim. Morbi viverra congue enim
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+            </div>
+
+            <div class="galery__line-separator line-separator">
+
+              <div class="line-separator__text ">
+                Outdoors Edition
+              </div>
+
+              <div class="line-separator__counter">2 / 8</div>
+
+              <div class="line-separator__separator"> </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section editors-pick" id="editors-pick">
+        <div class="editors-pick-container">
+          <div class="editors-pick-container__description editors-pick-description">
+            <h2 class="editors-pick-description__title">
+              Editor's Pick
+            </h2>
+
+            <h3 class="editors-pick-description__description">
+              Ours picks, just for you nam an vidisse admodum omittantur, nihil corrumpit
+            </h3>
+          </div>
+        </div>
+      </section>
     </main>
 
 

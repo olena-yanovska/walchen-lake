@@ -531,3 +531,41 @@
     font-size: 12px;
   }
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+
+  padding-left: 55px;
+  padding-right: 120px;
+
+  background-color: $yellow;
+
+  &__logo {
+    height: 23px;
+    margin-right: 70px;
+  }
+
+  &__years {
+    color: $brown;
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__button {
+    height: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

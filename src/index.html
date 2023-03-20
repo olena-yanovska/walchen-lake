@@ -3,11 +3,459 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Walchen Lake</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    >
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="use-credentials"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&family=Golos+Text:wght@700&family=Open+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="./styles/main.scss"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+  <body class="page">
+    <header class="page__section header">
+      <div class="swiper header__swiper">
+        <div class="swiper__swiper-wrapper swiper-wrapper">
+          <div class="swiper-slide swiper-wrapper__slide">
+            <div class="swiper-slide__slide-content slide-content">
+              <h1 class="slide-content__title">
+                The Walchen
+                <br>
+                Lake
+              </h1>
+              <p class="slide-content__text">
+                One of the deepest and largest alpine lakes in Germany
+                <br>
+                and one of the best outdoors place
+                <br>
+                  that you never imagine before.
+              </p>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-wrapper__slide">
+            <div class="swiper-slide__slide-content slide-content">
+              <h1 class="slide-content__title">
+                The Walchen
+                <br>
+                Lake
+              </h1>
+              <p class="slide-content__text">
+                One of the deepest and largest alpine lakes in Germany
+                <br>
+                and one of the best outdoors place
+                <br>
+                  that you never imagine before.
+              </p>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-wrapper__slide">
+            <div class="swiper-slide__slide-content slide-content">
+              <h1 class="slide-content__title">
+                The Walchen
+                <br>
+                Lake
+              </h1>
+              <p class="slide-content__text">
+                One of the deepest and largest alpine lakes in Germany
+                <br>
+                and one of the best outdoors place
+                <br>
+                  that you never imagine before.
+              </p>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <div class="swiper__scroll-buttons scroll-buttons">
+          <div class="scroll-buttons__container">
+            <div class="scroll-buttons__left">
+              <img
+                class="scroll-buttons__image"
+                src="../src/images/arrow-left.svg"
+                alt="arrow-left"
+              >
+            </div>
+
+            <div class="scroll-buttons__right">
+              <img
+                class="scroll-buttons__image"
+                src="../src/images/arrow-right.svg"
+                alt="arrow-left"
+              >
+            </div>
+
+            <div class="scroll-buttons__text ">
+              Outdoors Edition
+            </div>
+            <div class="scroll-buttons__counter" id="counter"> </div>
+            <div class="scroll-buttons__separator"> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__top">
+        <div class="logo-block">
+          <a href="#">
+            <img
+            class="logo"
+            src="../src/images/logo.png"
+            alt="Logo"
+          >
+          </a>
+        </div>
+
+        <div class="header__nav">
+          <div class="header__link-block">
+            <a href="#my-collection" class="header__link header__link-block--collection">
+              My Collection
+            </a>
+          </div>
+
+          <p class="header__separator">|</p>
+
+          <div class="header__link-block header__link-block--person">
+            <a href="#galih-pambudi" class="header__link">
+              Galih Pambudi
+            </a>
+            <a href="#">
+              <img
+              class="person-image"
+              src="../src/images/black-circle.png"
+              alt="Logo"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__menu menu" id="menu">
+        <div class="menu__container">
+          <div class="menu__content">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Home</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#recommendation" class="menu__link">Recommendation</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#explore" class="menu__link">Explore</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#help" class="menu__link">Help</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#about-us" class="menu__link">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page__section featured-spots" id="featured-spots">
+        <div class="featured-spots-container">
+          <div class="featured-spots-container__description featured-spots-description">
+            <h2 class="featured-spots-description__title">
+              Featured Spots
+            </h2>
+
+            <h3 class="featured-spots-description__description">
+              Some of featured spot that you might want visit before you die
+            </h3>
+
+            <p class="featured-spots-description__view-all">
+              View All
+            </p>
+          </div>
+
+          <div class="featured-spots-container__galery galery">
+            <div class="galery__cards cards">
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery1.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Ollantaytambo</div>
+                <div class="card__location">Peru</div>
+                <div class="card__description">
+                  Proin volutpat nisi eros, id gravida leo mattis sed. Nullam sit amet iaculis neque, eget maximus erat.
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery2.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Antelope Canyon</div>
+                <div class="card__location">USA</div>
+                <div class="card__description">
+                  Donec at ante id eros rhoncus bibendum a at augue. Fusce eu aliquam quam, ut efficitur nisl. Curabitur sit amet consectetur metus.
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+
+              <div class="cards__card card">
+                <img
+                  class="card__photo"
+                  src="../src/images/gallery3.jpg"
+                  alt="mountains"
+                >
+                <div class="card__title">Lake Louise</div>
+                <div class="card__location">Canada</div>
+                <div class="card__description">
+                  Maecenas sit amet nibh nec eros volutpat fringilla at eu lacus. Morbi viverra congue enim. Morbi viverra congue enim
+                </div>
+                <a href="#" class="card__link">read more</a>
+              </div>
+            </div>
+
+            <div class="galery__line-separator line-separator">
+
+              <div class="line-separator__text ">
+                Outdoors Edition
+              </div>
+
+              <div class="line-separator__counter">2 / 8</div>
+
+              <div class="line-separator__separator"> </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section above-sea" id="above-sea">
+        <div class="above-sea__container above-sea-container">
+          <img
+            src="../src/images/sea.jpg"
+            class="above-sea-container__photo"
+            alt="sea"
+          >
+          <div class="above-sea-container__sea-content sea-content">
+            <h2 class="sea-content__title">
+              Above
+              <br>
+              The Sea
+            </h2>
+
+            <blockquote class="sea-content__quote">
+              Nunc sodales lacus eu diam placerat convallis.
+              <br>
+              Sed ac tellus vel magna porttitor placerat. Vivamus consequat.
+            </blockquote>
+
+            <p class="sea-content__text">
+              Cras id consectetur massa. Donec at ante id eros rhoncus bibendum a at augue. Fusce eu aliquam quam, ut efficitur nisl. Curabitur sit amet consectetur metus. Proin ullamcorper ullamcorper nibh, ut convallis felis varius vel. Maecenas dui elit, aliquet nec fringilla quis, placerat semper nibh. Sed nec massa neque. Ut augue sem, feugiat eu lacus vel, sodales egestas eros.
+              <br> <br>
+              Sed aliquet aliquet turpis vitae condimentum. Maecenas sit amet nibh nec eros volutpat fringilla at eu lacus. Morbi viverra congue enim. Suspendisse ac enim eu neque venenatis porttitor. Ut et pulvinar nunc. Fusce sagittis lacus nisl, a scelerisque eros consectetur nec eros volutpat ut.
+            </p>
+
+            <a href="#" class="button">Read More</a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="page__section editors-pick" id="editors-pick">
+        <div class="editors-pick-container">
+          <div class="editors-pick-container__description editors-pick-description">
+            <h2 class="editors-pick-description__title">
+              Editor's Pick
+            </h2>
+
+            <h3 class="editors-pick-description__description">
+              Ours picks, just for you nam an vidisse admodum omittantur, nihil corrumpit
+            </h3>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="page__section mountains" id="mountains">
+        <div class="mountains-container">
+          <h2 class="mountains-container__title">
+            Mountain Collections
+          </h2>
+
+          <p class="mountains-container__description">
+            See our best mountain collections, explore and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia.
+          </p>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Southern Mountain
+                </h3>
+                <p class="article-content__location">
+                  South Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain1.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Norhern Mountain
+                </h3>
+                <p class="article-content__location">
+                  North Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain2.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Eastern Mountain
+                </h3>
+                <p class="article-content__location">
+                  East Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain3.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page__section subscribe" id="subscribe">
+        <div class="subscribe-container">
+          <p class="subscribe-container__text">
+            Subscribe to our news letter
+          </p>
+          <div class="subscribe-container__subscribe subscribe">
+            <form
+                action="/"
+                method="post"
+                class="subscribe__form form"
+                id="submitForm"
+              >
+              <input
+                name="name"
+                type="text"
+                placeholder="Your email"
+                class="form__field form-field"
+                required
+              >
+
+              <button
+              type="submit"
+              class="form__button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <a href="#">
+        <img
+        src="../src/images/logo.png"
+        alt="logo"
+        class="footer__logo"
+      >
+      </a>
+      <p class="footer__years">&copy; 2017 - 2018</p>
+      <div class="footer__social social">
+        <a href="#">
+          <img
+          class="social__button"
+          src="../src/images/instagram.svg"
+          alt="instagram-logo"
+        >
+        </a>
+        <a href="#">
+          <img
+          class="social__button"
+          src="../src/images/facebook.svg"
+          alt="instagram-logo"
+        >
+        </a>
+        <a href="#">
+          <img
+          class="social__button"
+          src="../src/images/twitter.svg"
+          alt="instagram-logo"
+        >
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

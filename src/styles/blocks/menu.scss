@@ -1,0 +1,133 @@
+.menu {
+  height: $menu-height;
+  padding-left: 58px;
+
+  background-color: $brown-transparent;
+
+  @include onMobile {
+    padding-left: 10px;
+    height: 150px;
+    width: 100%;
+  }
+
+  @include onTablet {
+    padding-left: 20px;
+    height: 100vh;
+  }
+
+  @include onDesktop {
+    padding-left: 58px;
+    height: $menu-height;
+  }
+
+  &__container {
+    display: flex;
+
+    @include onMobile {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @include onMobile {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    margin-top: 66px;
+
+    @include onMobile {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    @include onTablet {
+      margin-top: 66px;
+    }
+
+    @include onDesktop {
+      margin-top: 66px;
+    }
+  }
+
+  &__item {
+    margin-top: 16px;
+
+    @include onMobile {
+      margin-top: 5px;
+      width: 100%;
+    }
+
+    @include onTablet {
+      margin-top: 16px;
+    }
+
+    @include onDesktop {
+      margin-top: 16px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    padding: 10px 0;
+    z-index: 10;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: $brown-light;
+
+    transition: all 0.3s;
+
+    @include onMobile {
+      color: $white;
+      padding: 0;
+      text-align: center;
+
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    @include onTablet {
+      color: $brown-light;
+      padding: 10px 0;
+    }
+
+    @include onDesktop {
+      color: $brown-light;
+      padding: 10px 0;
+    }
+
+    &--active {
+      color: $white;
+
+      &::after {
+        display: inline-block;
+        margin-left: 70px;
+        margin-bottom: 3px;
+        content: "";
+        width: 83px;
+        border-bottom: 2px solid $white;
+
+        @include onMobile {
+          display: none;
+        }
+
+        @include onTablet {
+          display: none;
+        }
+
+        @include onDesktop {
+          display: inline-block;
+        }
+      }
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

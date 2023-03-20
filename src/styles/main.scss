@@ -1,6 +1,16 @@
 @import "utils";
-@import "fonts";
-@import "typography";
 @import "normalize.scss";
 @import "reset.scss";
+
 @import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/scroll-buttons.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/button.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/form.scss";
+@import "./blocks/logo.scss";
+
+// @import "./blocks";

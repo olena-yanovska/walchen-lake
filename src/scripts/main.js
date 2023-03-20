@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const form = document.getElementById('submit-form');
+const form = document.getElementById('submitForm');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();

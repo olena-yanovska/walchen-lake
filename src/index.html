@@ -27,6 +27,7 @@
     >
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
   </head>
 
   <body class="page">
@@ -289,7 +290,7 @@
         </div>
       </section>
 
-      <section class="page__section editors-pick" id="editors-pick">
+      <!-- <section class="page__section editors-pick" id="editors-pick">
         <div class="editors-pick-container">
           <div class="editors-pick-container__description editors-pick-description">
             <h2 class="editors-pick-description__title">
@@ -300,6 +301,93 @@
               Ours picks, just for you nam an vidisse admodum omittantur, nihil corrumpit
             </h3>
           </div>
+        </div>
+      </section> -->
+
+      <section class="page__section mountains" id="mountains">
+        <div class="mountains-container">
+          <h2 class="mountains-container__title">
+            Mountain Collections
+          </h2>
+
+          <p class="mountains-container__description">
+            See our best mountain collections, explore and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia.
+          </p>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Southern Mountain
+                </h3>
+                <p class="article-content__location">
+                  South Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain1.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Norhern Mountain
+                </h3>
+                <p class="article-content__location">
+                  North Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain2.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
+
+          <article class="mountains-container__article article">
+            <div class="article-wrapper">
+              <div class="article-wrapper__article-content article-content">
+                <h3 class="article-content__title">
+                  Eastern Mountain
+                </h3>
+                <p class="article-content__location">
+                  East Country
+                </p>
+                <p class="article-content__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lobortis augue blandit lacinia. Integer ipsum lectus, malesuada vitae molestie eu, scelerisque nec dolor. In et lectus lacinia, ultrices quam a, feugiat velit.
+                  <br> <br>
+
+                  Etiam mollis ut nunc vel egestas. Nunc porttitor eleifend magna, nec pulvinar sapien consequat auctor. Fusce orci nisl, feugiat sed tortor egestas, volutpat mattis lacus.
+                </p>
+                <a class="button" href="#">Read More</a>
+              </div>
+              <img
+                src="../src/images/mountain3.jpg"
+                alt="Southern Mountain"
+                class="article-wrapper__picture"
+              >
+            </div>
+          </article>
         </div>
       </section>
 
@@ -314,7 +402,6 @@
                 method="post"
                 class="subscribe__form form"
                 id="submitForm"
-                onsubmit="event.preventDefault();"
               >
               <input
                 name="name"

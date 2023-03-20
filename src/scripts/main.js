@@ -22,10 +22,3 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
-
-const form = document.getElementById('submitForm');
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  form.reset();
-});

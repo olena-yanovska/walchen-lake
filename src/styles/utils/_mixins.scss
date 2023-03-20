@@ -1,18 +1,17 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
-}
-
-@mixin onDesktop {
-  @media (min-width: 1024px) {
+@mixin onMobile {
+  @media (max-width: 639px) {
     @content;
   }
 }
 
 @mixin onTablet {
-  @media (min-width: 744px) {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
@@ -36,5 +35,5 @@
 
   background-color: $white;
   cursor: pointer;
-  
+
 }

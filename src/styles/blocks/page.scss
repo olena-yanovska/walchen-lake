@@ -1,315 +1,6 @@
 .page {
   scroll-behavior: smooth;
-}
-
-.header__container {
-  display: flex;
-}
-
-.header {
-  height: $header-height;
-  @include backgroundPosition;
-
-  &__swiper {
-    height: $header-height;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10;
-  }
-}
-
-.header__separator {
-  color: $white;
-}
-
-.header__top {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-
-  top: 0;
-  left: 0;
   width: 100%;
-}
-
-.logo-block {
-  display: flex;
-  align-items: center;
-  padding-left: 55px;
-
-  height: $logo-block-height;
-  width: 344px;
-  min-width: $menu-width;
-
-  background-color: $yellow;
-}
-
-.logo {
-  height: 23px;
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
-.header__link-block {
-  display: flex;
-  align-items: center;
-  padding-left: 24px;
-  padding-right: 30px;
-
-  &--collection {
-    margin-right: 20px;
-  }
-
-  &--person {
-    margin-left: 20px;
-  }
-}
-
-.header__link {
-  font-size: 11px;
-  color: $white;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-
-  transition: all 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.person-image {
-  height: 31px;
-  margin-right: 86px;
-  margin-left: 15px;
-}
-
-.header__menu {
-  width: $menu-width;
-
-  position: absolute;
-  z-index: 10;
-  top: $logo-block-height;
-  left: 0;
-
-  background-color: $brown;
-}
-
-.menu {
-  height: $menu-height;
-  padding-left: 58px;
-
-  background-color: $brown-transparent;
-
-  &__list {
-    margin-top: 66px;
-  }
-
-  &__item {
-    margin-top: 16px;
-  }
-
-  &__link {
-    position: relative;
-    display: block;
-    padding: 10px 0;
-    z-index: 10;
-
-    font-weight: 700;
-    font-size: 16px;
-    color: $brown-light;
-
-    transition: all 0.3s;
-
-    &--active {
-      color: $white;
-      &::after {
-        display: inline-block;
-        margin-left: 70px;
-        margin-bottom: 3px;
-        content: "";
-        width: 83px;
-        border-bottom: 2px solid $white;
-      }
-    }
-
-    &:hover {
-      color: $white;
-    }
-  }
-}
-
-.menu__container {
-  display: flex;
-}
-
-.button {
-  display: inline-block;
-  height: 35px;
-  width: 125px;
-  text-align: center;
-
-  font-size: 12px;
-  line-height: 35px;
-  font-weight: 600;
-  color: #000;
-
-  border: 1px solid $yellow;
-  border-radius: 20px;
-  background-color: $yellow;
-
-  transition: all 0.3s;
-
-  &:hover {
-    font-size: 13px;
-    border: 1px solid $brown;
-    box-shadow: 2px 2px 16px black;
-  }
-}
-
-.swiper {
-  &__swiper-wrapper {
-    position: absolute;
-    z-index: -10;
-  }
-
-  &__scroll-buttons {
-    position: absolute;
-    width: 100%;
-    bottom: 15px;
-    left: $menu-width;
-    z-index: 1;
-  }
-}
-
-.swiper-wrapper {
-  &__slide {
-    background-image: url(../images/main.jpg);
-    @include backgroundPosition;
-
-    :after {
-      position: absolute;
-      z-index: -1;
-
-      content: "";
-      width: 100%;
-      height: 30%;
-      bottom: 0;
-      left: 0;
-
-      background: linear-gradient(to bottom, transparent 0%,  $brown 100%);
-    }
-  }
-}
-
-.slide-content {
-  display: flex;
-  flex-direction: column;
-
-  margin-top: 275px;
-  margin-left: 113px + $menu-width;
-
-  &__title {
-    height: 93px;
-
-    font-size: 52px;
-    line-height: 1.05;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    margin-bottom: 50px;
-  }
-
-  &__text {
-    width: 330px;
-    margin-bottom: 40px;
-
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    line-height: 1.8;
-  }
-}
-
-.swiper-slide {
-  position: absolute;
-  z-index: -10;
-}
-
-.scroll-buttons {
-  &__container {
-    display: flex;
-    width: 100%;
-    margin-left: 111px;
-  }
-
-  &__left {
-    @include scroll-button(38px);
-    margin-right: 10px;
-
-    transition: all 0.3s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__right {
-    @include scroll-button(37px);
-    margin-right: 15px;
-
-    transition: all 0.3s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__image {
-    height: 20px;
-  }
-
-  &__text {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    line-height: 35px;
-    margin-right: 30px;
-
-    &::after {
-      display: inline-block;
-      margin-left: 25px;
-      margin-bottom: 3px;
-      content: "";
-      width: 555px;
-      border-bottom: 2px solid $brown-light;
-    }
-  }
-
-  &__separator {
-    &::after {
-      display: inline-block;
-      margin-left: 25px;
-      content: "";
-      width: 30px;
-      border-bottom: 2px solid $brown-light;
-    }
-  }
-}
-
-#counter {
-  display: inline-block;
-  width: 25px;
-  margin-right: 7px;
-
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  line-height: 35px;
 }
 
 .featured-spots {
@@ -319,16 +10,46 @@
 
 .featured-spots-container {
   display: flex;
-  padding-top: 100px;
-  width: 1200px;
+  flex-direction: row;
+  padding-top: 110px;
+  width: 100%;
+  max-width: 1200px;
+
+  @include onMobile {
+    flex-direction: column;
+  }
+
+  @include onTablet {
+    flex-direction: column;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+  }
 }
 
 .featured-spots-description {
   display: flex;
   flex-direction: column;
+  width: 300px;
 
   padding-right: 85px;
   padding-left: 20px;
+
+  @include onMobile {
+    width: 100%;
+    padding: 0;
+  }
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 300px;
+    padding-right: 85px;
+    padding-left: 20px;
+  }
 
   &__title {
     margin-top: 3px;
@@ -336,6 +57,21 @@
 
     font-size: 23px;
     line-height: 1.3;
+
+    @include onMobile {
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @include onTablet {
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @include onDesktop {
+      text-align: right;
+      font-size: 23px;
+    }
   }
 
   &__description {
@@ -345,15 +81,40 @@
 
     font-size: 11px;
     line-height: 2;
+
+    @include onMobile {
+      text-align: center;
+    }
+
+    @include onTablet {
+      text-align: center;
+    }
+
+    @include onDesktop {
+      text-align: right;
+    }
   }
 
   &__view-all {
+    display: block;
     margin-top: 110px;
     text-align: right;
 
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.5px;
+
+    @include onMobile {
+      display: none;
+    }
+
+    @include onTablet {
+      display: none;
+    }
+
+    @include onDesktop {
+      display: block;
+    }
 
     &::before {
       display: inline-block;
@@ -384,15 +145,50 @@
 .cards {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 
   padding-top: 82px;
+
+  @include onMobile {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  @include onTablet {
+    padding-top: 40px;
+    flex-direction: row;
+  }
+
+  @include onDesktop {
+    padding-top: 82px;
+    flex-direction: row;
+  }
 }
 
 .card {
   padding: 0 28px;
+  width: 100%;
+  min-width: 100px;
+  text-align: left;
+
+  @include onMobile {
+    text-align: center;
+  }
+
+  @include onTablet {
+    text-align: left;
+  }
+
+  @include onDesktop {
+    text-align: left;
+  }
 
   &__photo {
-    width: 260px;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto;
 
     transition: all 0.3s;
 
@@ -441,11 +237,36 @@
     &:hover {
       transform: scale(1.2);
     }
+
+    @include onMobile {
+      margin-bottom: 30px;
+    }
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      margin-bottom: 0;
+    }
   }
 }
 
 .line-separator {
   padding-left: 30px;
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: inline-block;
+  }
+
   &__text {
     display: inline-block;
     margin-top: 45px;
@@ -485,17 +306,79 @@
 }
 
 .above-sea {
+  width: 100%;
+
   &__container {
     margin-top: 133px;
+
+    @include onMobile {
+      margin-top: 50px;
+    }
+
+    @include onTablet {
+      margin-top: 80px;
+    }
+
+    @include onDesktop {
+      margin-top: 133px;
+    }
   }
 }
 
 .above-sea-container {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include onMobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
   &__photo {
     display: block;
-    width: 575px;
+    max-width: 575px;
+    width: 100%;
+    height: auto;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include onTablet {
+      max-width: 300px;
+      max-height: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include onDesktop {
+      max-width: 575px;
+      max-height: 575px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -503,12 +386,45 @@
   position: relative;
   padding-left: 110px;
 
+  @include onMobile {
+    padding: 0;
+    width: 100%;
+  }
+
+  @include onTablet {
+    padding-left: 40px;
+  }
+
+  @include onDesktop {
+    padding-left: 110px;
+  }
+
   &__title {
     margin-bottom: 22px;
 
     font-size: 52px;
     line-height: 1;
     font-weight: 700;
+
+    text-align: left;
+
+    @include onMobile {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include onTablet {
+      margin-top: 0;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      margin-top: 0;
+      text-align: left;
+      font-size: 52px;
+    }
   }
 
   &__quote {
@@ -528,12 +444,32 @@
       position: absolute;
       left: -15px;
       content: "\0022";
+
+      @include onMobile {
+        left: -10px;
+      }
+
+      @include onDesktop {
+        left: -15px;
+      }
     }
 
     &::after {
       position: absolute;
       right: -15px;
       content: "\0022";
+
+      @include onMobile {
+        padding: 0 40px;
+      }
+    }
+
+    @include onMobile {
+      right: -5px;
+    }
+
+    @include onDesktop {
+      right: -15px;
     }
   }
 
@@ -542,146 +478,62 @@
     margin-bottom: 52px;
 
     font-size: 12px;
-  }
-}
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 85px;
-
-  padding-left: 55px;
-  padding-right: 120px;
-
-  background-color: $yellow;
-
-  &__logo {
-    height: 23px;
-    margin-right: 70px;
-  }
-
-  &__years {
-    color: $brown;
-    font-size: 12px;
-    font-weight: 800;
-  }
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-
-  &__button {
-    height: 16px;
-    transition: all 0.3s;
-
-    &:hover {
-      transform: scale(1.3);
+    @include onMobile {
+      width: 100%;
+      padding: 0 30px;
     }
-  }
-}
 
-.subscribe {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.subscribe-container {
-  position: relative;
-  width: 509px;
-  height: 245px;
-
-  margin-top: 110px;
-  margin-bottom: 45px;
-
-  background-image: url("../images/map.png");
-  @include backgroundPosition;
-
-  &__text {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 85px;
-  }
-}
-
-.form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-
-  &__form {
-    display: flex;
-    width: 100%;
-  }
-
-  &__field {
-    display: inline-block;
-    width: 400px;
-    margin-right: 13px;
-  }
-
-  &__button {
-    display: block;
-    height: 35px;
-    width: 125px;
-
-    font-size: 12px;
-    font-weight: 600;
-    color: #000;
-
-    border: 1px solid $yellow;
-    border-radius: 20px;
-    background-color: $yellow;
-
-    cursor: pointer;
-
-    transition: all 0.3s;
-
-    &:hover {
-      font-size: 13px;
-      border: 1px solid $brown;
-      box-shadow: 2px 2px 16px black;
+    @include onTablet {
+      width: 100%;
+      padding: 0 30px;
     }
-  }
-}
 
-.form-field {
-  height: 36px;
-  display: block;
-  padding: 14px 16px;
-
-  background-color: white;
-  border: 1px solid $brown;
-  border-radius: 40px;
-
-  &::placeholder {
-    font-size: 12px;
-    font-weight: 600;
-    color: black;
-  }
-
-  &:hover {
-    border: 1px solid $brown;
-    box-shadow: 2px 2px 16px black;
-
-    &::placeholder {
-      color: black;
+    @include onDesktop {
+      width: 310px;
     }
   }
 }
 
 .mountains-container {
+  position: relative;
+  z-index: 1;
   padding-top: 180px;
   padding-left: 258px;
   padding-right: 115px;
 
+  background-image: url(../images/mountains-bg.jpg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include onMobile {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include onTablet {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
+  @include onDesktop {
+    padding-top: 180px;
+    padding-left: 258px;
+    padding-right: 115px;
+  }
+
   &__title {
     font-size: 50px;
     margin-bottom: 27px;
+
+    @include onMobile {
+      text-align: center;
+      font-size: 40px;
+    }
   }
 
   &__description {
@@ -691,6 +543,21 @@
     font-size: 12px;
     line-height: 1.7;
     font-weight: 600;
+
+    @include onMobile {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include onTablet {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include onDesktop {
+      width: 370px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -713,6 +580,20 @@
   width: 100%;
   padding-top: 50px;
 
+  @include onMobile {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+
   &__picture {
     width: 260px;
     height: 260px;
@@ -731,10 +612,27 @@
   flex-direction: column;
   width: 500px;
 
+  @include onMobile {
+    width: 100%;
+  }
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 500px;
+  }
+
   &__title {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 3px;
+
+    @include onMobile {
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 
   &__location {
@@ -748,5 +646,6 @@
     font-size: 11px;
     line-height: 1.8;
     margin-bottom: 35px;
+    padding-right: 15px;
   }
 }

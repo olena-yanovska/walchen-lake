@@ -1,0 +1,30 @@
+.logo {
+  height: 23px;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+
+  height: $logo-block-height;
+  width: 344px;
+  min-width: $menu-width;
+
+  background-color: $yellow;
+
+  @include onMobile {
+    padding-left: 20px;
+    min-width: 70px;
+  }
+
+  @include onTablet {
+    padding-left: 30px;
+    min-width: 170px;
+  }
+
+  @include onDesktop {
+    padding-left: 55px;
+    min-width: $menu-width;
+  }
+}

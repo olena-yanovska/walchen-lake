@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  height: 35px;
+  width: 125px;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #000;
+
+  border: 1px solid $yellow;
+  border-radius: 20px;
+  background-color: $yellow;
+
+  transition: all 0.3s;
+
+  &:hover {
+    font-size: 13px;
+    border: 1px solid $brown;
+    box-shadow: 2px 2px 16px black;
+  }
+
+  @include onMobile {
+    margin: 0 auto;
+  }
+}

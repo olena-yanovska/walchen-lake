@@ -1,0 +1,25 @@
+.subscribe {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.subscribe-container {
+  position: relative;
+  width: 509px;
+  height: 245px;
+
+  margin-top: 110px;
+  margin-bottom: 45px;
+
+  background-image: url("../images/map.png");
+  @include backgroundPosition;
+
+  &__text {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 85px;
+  }
+}

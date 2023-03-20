@@ -1,0 +1,146 @@
+.header {
+  height: $header-height;
+  @include backgroundPosition;
+
+  @include onMobile {
+    height: 100vh;
+  }
+
+  @include onTablet {
+    height: 100vh;
+  }
+
+  @include onDesktop {
+    height: $header-height;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__swiper {
+    height: $header-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+
+    @include onMobile {
+      height: 100vh;
+    }
+
+    @include onTablet {
+      height: 100vh;
+    }
+
+    @include onDesktop {
+      height: $header-height;
+    }
+  }
+
+  &__separator {
+    color: $white;
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-block {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 30px;
+
+    @include onMobile {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @include onTablet {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @include onDesktop {
+      padding-right: 30px;
+      padding-left: 24px;
+    }
+
+    &--collection {
+      margin-right: 20px;
+    }
+
+    &--person {
+      margin-left: 20px;
+    }
+  }
+
+  &__link {
+    font-size: 11px;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__menu {
+    width: $menu-width;
+
+    position: absolute;
+    z-index: 10;
+    top: $logo-block-height;
+    left: 0;
+
+    background-color: $brown;
+
+    @include onMobile {
+      width: 170px;
+    }
+
+    @include onTablet {
+      width: 200px;
+    }
+
+    @include onDesktop {
+      width: $menu-width;
+    }
+  }
+}
+
+.person-image {
+  height: 31px;
+  margin-right: 86px;
+  margin-left: 15px;
+
+  @include onMobile {
+    padding-right: 10px;
+    margin-right: 0;
+  }
+
+  @include onTablet {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  @include onDesktop {
+    margin-right: 86px;
+  }
+}

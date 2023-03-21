@@ -1,5 +1,5 @@
 ![](https://github.com/olena-yanovska/walchen-lake/blob/master/src/images/screenshots/pic1.PNG)
-# The Walchen lake Landing Page
+# The Walchen Lake Landing Page
 
 This landing page is a great example of how HTML and SCSS can be used to create an engaging and interactive website. With the addition of swiper and hover effects, the page provides a seamless user experience that keeps visitors engaged and interested.
 
@@ -41,5 +41,5 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request 
 
 
-## [License](https://github.com/olena-yanovska/walchen-lake/blob/master/LICENSE)
+### [License](https://github.com/olena-yanovska/walchen-lake/blob/master/LICENSE)
 

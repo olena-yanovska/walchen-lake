@@ -1,0 +1,189 @@
+.above-sea {
+  width: 100%;
+
+  &__container {
+    margin-top: 133px;
+
+    @include onMobile {
+      margin-top: 50px;
+    }
+
+    @include onTablet {
+      margin-top: 80px;
+    }
+
+    @include onDesktop {
+      margin-top: 133px;
+    }
+  }
+}
+
+.above-sea-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include onMobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__photo {
+    display: block;
+    max-width: 575px;
+    width: 100%;
+    height: auto;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include onTablet {
+      max-width: 300px;
+      max-height: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include onDesktop {
+      max-width: 575px;
+      max-height: 575px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.sea-content {
+  position: relative;
+  padding-left: 110px;
+
+  @include onMobile {
+    padding: 0;
+    width: 100%;
+  }
+
+  @include onTablet {
+    padding-left: 40px;
+  }
+
+  @include onDesktop {
+    padding-left: 110px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+
+    text-align: left;
+
+    @include onMobile {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include onTablet {
+      margin-top: 0;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      margin-top: 0;
+      text-align: left;
+      font-size: 52px;
+    }
+  }
+
+  &__quote {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+
+    font-family: "Playfair Displa"y, serif;
+
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2;
+    font-weight: 500;
+
+    &::before {
+      position: absolute;
+      left: -15px;
+      content: "\0022";
+
+      @include onMobile {
+        left: -10px;
+      }
+
+      @include onDesktop {
+        left: -15px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: -15px;
+      content: "\0022";
+
+      @include onMobile {
+        padding: 0 40px;
+      }
+    }
+
+    @include onMobile {
+      right: -5px;
+    }
+
+    @include onDesktop {
+      right: -15px;
+    }
+  }
+
+  &__text {
+    width: 310px;
+    margin-bottom: 52px;
+
+    font-size: 12px;
+
+    @include onMobile {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    @include onTablet {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    @include onDesktop {
+      width: 310px;
+    }
+  }
+}

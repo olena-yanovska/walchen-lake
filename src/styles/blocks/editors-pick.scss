@@ -1,0 +1,471 @@
+.editors-pick-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 160px;
+  width: 100%;
+
+  @include onMobile {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  @include onTablet {
+    flex-direction: column;
+    margin-top: 160px;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    margin-top: 160px;
+  }
+}
+
+.editors-pick-description {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+  padding-right: 85px;
+  padding-left: 20px;
+
+  @include onMobile {
+    width: 100%;
+    padding: 0;
+  }
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 300px;
+    padding-right: 85px;
+    padding-left: 20px;
+  }
+
+  &__title {
+    margin-top: 3px;
+    text-align: right;
+
+    font-size: 23px;
+    line-height: 1.3;
+
+    @include onMobile {
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @include onTablet {
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @include onDesktop {
+      text-align: right;
+      font-size: 23px;
+    }
+  }
+
+  &__description {
+    margin-top: 15px;
+    padding-left: 20px;
+    text-align: right;
+
+    font-size: 11px;
+    line-height: 2;
+
+    @include onMobile {
+      text-align: center;
+    }
+
+    @include onTablet {
+      text-align: center;
+    }
+
+    @include onDesktop {
+      text-align: right;
+    }
+  }
+}
+
+.photo-galery {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+
+  @include onMobile {
+    width: 100%;
+  }
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 1000px;
+  }
+}
+
+.buttons {
+  &__container {
+    display: flex;
+    padding-left: 30px;
+
+    @include onTablet {
+      margin-left: 0;
+      padding-top: 30px;
+    }
+
+    @include onDesktop {
+      margin-left: 30px;
+    }
+  }
+
+  &__left {
+    @include scroll-button(38px);
+    margin-right: 10px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__right {
+    @include scroll-button(37px);
+    margin-right: 15px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    margin-right: 20px;
+
+    &::after {
+      display: inline-block;
+      margin-left: 20px;
+      margin-bottom: 3px;
+      content: "";
+      width: 450px;
+      border-bottom: 2px solid $brown-light;
+
+      @include onTablet {
+        display: inline-block;
+        width: 100px;
+      }
+
+      @include onDesktop {
+        display: inline-block;
+        width: 450px;
+      }
+    }
+  }
+
+  &__separator {
+    &::after {
+      display: inline-block;
+      margin-left: 25px;
+      margin-right: 25px;
+      content: "";
+      width: 30px;
+      border-bottom: 2px solid $brown-light;
+
+      @include onMobile {
+        display: none;
+      }
+
+      @include onTablet {
+        display: none;
+      }
+
+      @include onDesktop {
+        display: inline-block;
+      }
+    }
+  }
+
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: block;
+  }
+
+  @include onDesktop {
+    display: block;
+  }
+
+  &__counter {
+    display: inline-block;
+    margin-right: 7px;
+
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.galery-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 80px;
+
+  @include onMobile {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include onTablet {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include onDesktop {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 80px;
+  }
+}
+
+.galery-pic-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include onMobile {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+}
+
+.first-part {
+  width: 62%;
+  display: flex;
+  position: relative;
+
+  @include onMobile {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include onTablet {
+    width: 62%;
+  }
+
+  @include onDesktop {
+    width: 62%;
+  }
+
+  &__image {
+    width: 100%;
+    transition: all 0.3s;
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+
+.text-on-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background-color: $brown-transparent-dark;
+
+  &__title {
+    padding: 0 3px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    @include onMobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+
+  &__location {
+    padding: 0 3px;
+
+    font-size: 16px;
+    font-weight: 800;
+    color: $brown-light;
+
+    @include onMobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+    padding: 0 3px;
+
+    font-size: 11px;
+    line-height: 2;
+
+    @include onMobile {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+
+  @include onMobile {
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @include onTablet {
+    width: 31%;
+  }
+
+  @include onDesktop {
+    width: 31%;
+  }
+
+  &__image {
+    width: 100%;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+
+.galery-pic-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  padding-top: 40px;
+
+  @include onMobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+
+  &__image1 {
+    width: 30%;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+    }
+
+    @include onTablet {
+      width: 30%;
+    }
+
+    @include onDesktop {
+      width: 30%;
+    }
+  }
+
+  &__image2 {
+    width: 60%;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+
+    @include onMobile {
+      max-width: 300px;
+      width: 100%;
+    }
+
+    @include onTablet {
+      width: 60%;
+    }
+
+    @include onDesktop {
+      width: 60%;
+    }
+  }
+}

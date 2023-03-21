@@ -1,0 +1,154 @@
+.mountains-container {
+  position: relative;
+  z-index: 1;
+  padding-top: 180px;
+  padding-left: 258px;
+  padding-right: 115px;
+
+  background-image: url(../images/mountains-bg.jpg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include onMobile {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include onTablet {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
+  @include onDesktop {
+    padding-top: 180px;
+    padding-left: 258px;
+    padding-right: 115px;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 27px;
+
+    @include onMobile {
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+
+    width: 370px;
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 600;
+
+    @include onMobile {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include onTablet {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include onDesktop {
+      width: 370px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.article {
+  &:after {
+    display: block;
+    margin-top: 60px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+  }
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 50px;
+
+  @include onMobile {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+
+  &__picture {
+    width: 260px;
+    height: 260px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 8px;
+    }
+  }
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  @include onMobile {
+    width: 100%;
+  }
+
+  @include onTablet {
+    width: 100%;
+  }
+
+  @include onDesktop {
+    width: 500px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 3px;
+
+    @include onMobile {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  &__location {
+    font-size: 17px;
+    font-weight: 800;
+    color: $grey;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    padding-right: 15px;
+  }
+}

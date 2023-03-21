@@ -286,6 +286,13 @@
   display: flex;
   position: relative;
 
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.03);
+    border-radius: 8px;
+  }
+
   @include onMobile {
     width: 100%;
     justify-content: center;
@@ -307,6 +314,10 @@
     @include onMobile {
       max-width: 300px;
       width: 100%;
+    }
+
+    &:hover {
+      border-radius: 8px;
     }
   }
 }
